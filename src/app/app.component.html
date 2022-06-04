@@ -2,6 +2,11 @@
   <h1>
     Neobrutalism Snackbar
   </h1>
+  <label>Title:</label> 
+  <input [(ngModel)]="requiredTitle" type="text">
+  <label>Description:</label> 
+  <input [(ngModel)]="requiredText" type="text">
+
   <button class="btn" (click)="addNotification()">
     Click Me!
   </button>

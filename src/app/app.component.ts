@@ -29,16 +29,22 @@ export class AppComponent {
     '#F1F80D',
     ''
   ]
+  requiredTitle: string = '';
+  requiredText: string = '';
   
   addNotification() {
+    const title = this.requiredTitle || this.takeRandom(this.titles);
+    const text = this.requiredText || this.takeRandom(this.texts);
     const notification : SnackNotification = new SnackNotification(
-    this.takeRandom(this.titles), 
-    this.takeRandom(this.texts),
-    `${this.getRandomInt(1,59)}  minutes ago`,
-    this.takeRandom(this.colors)
+      title, 
+      text,
+      `${this.getRandomInt(1,59)}  minutes ago`,
+      this.takeRandom(this.colors)
     )
     this.notifications = [ ...this.notifications, notification];
     console.log("########### ADDING NEW NOTIFICATION \n", notification.title, ' - ', notification.text);
+    this.requiredTitle = '';
+    this.requiredText = '';
   }
     
   takeRandom(arr: Array<string>) : string {

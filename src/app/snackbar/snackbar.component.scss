@@ -1,0 +1,63 @@
+.snackbar {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    min-width: 60%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    box-shadow: 7px 7px black;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 10px 15px;
+    background-color: lightgray;
+  }
+  
+  .box {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+  }
+  
+  .title {
+    flex: 1;
+    font-weight: 600;
+    margin: 0 5px;
+    color: #333;
+    text-align: left;
+    line-height: 1.2;
+  }
+  
+  .time {
+    font-size: 0.6rem;
+    color: darkgray;
+    margin: 0 5px;
+  }
+  
+  .closing {
+    font-size: 1rem;
+    color: #333;
+    margin: 0 5px;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  
+  .notification-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    background-color: darkgray;
+    font-size: 0.9rem;
+  }
+  
+  
+  

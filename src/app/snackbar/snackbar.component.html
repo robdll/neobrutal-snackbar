@@ -1,1 +1,11 @@
-<p>snackbar works!</p>
+<article class="snackbar">
+    <header class="header">
+      <span class="box" [ngStyle]="{'background-color': notification.type}"></span>
+      <span class="title">{{notification.title}}</span>
+      <span class="time">{{notification.timeAgo}}</span>
+      <span class="closing" (click)="callParent()">X</span>
+    </header>
+    <div class="notification-container">
+      {{notification.text}}
+    </div>
+  </article>

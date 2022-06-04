@@ -1,28 +1,43 @@
-# neobrutal-snackbar
+# Neobrutalism Snackbar
+
+Is a toast message components developed using Neobrutalism design.
+In the provided [Demo](https://robertodilillo.dev/neobrutal-snackbar/) you can click the button to queue up notification.
+Each notification shows up for 2 seconds then disappears to allow the next to be displayed
+
+## Requirements 
+
+- [Angular cli](https://angular.io/cli)
+- [Node/npm](https://nodejs.org/en/download/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. clone the repository
+> git clone git@github.com:robdll/neobrutal-snackbar.git
 
-## Code scaffolding
+2. instal dependency
+> cd neobrutal-snackbar 
+npm i
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. run the project
+npm start
 
-## Build
+4. Open http://localhost:4200 to view it in your browser.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Build 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> `npm run build`
 
-## Running end-to-end tests
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Further help
+# Deploy
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# neobrutal-snackbar
+This project allow to deploy directly on github pages just by running 
+
+> ng deploy --base-href=/neobrutal-snackbar/

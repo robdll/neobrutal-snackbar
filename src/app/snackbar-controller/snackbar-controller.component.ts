@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-snackbar-controller',
+  selector: 'snackbar-controller',
   templateUrl: './snackbar-controller.component.html',
   styleUrls: ['./snackbar-controller.component.scss']
 })
